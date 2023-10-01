@@ -54,3 +54,6 @@ test_summary: test ## Output coverage summary
 test: ## Run unit tests and check coverage
 	@echo "Running unit tests"
 	go test ${GO_LD_FLAGS} -coverprofile=coverage.out ./...
+
+run: ## Run the test fixture
+	go run ./ ${DAYS}

@@ -1,21 +1,28 @@
 # GO Starter
 
+## Overview
+
+The task is described [here](https://github.com/emilybache/GildedRose-Refactoring-Kata/blob/main/GildedRoseRequirements.txt)
+
+Essentially 
+
+
 - Run :
 
 ```shell
-go run texttest_fixture.go [<number-of-days>; default: 2]
+make run DAYS=<number-of-days>  
 ```
+
+If the `DAYS` variable is omitted it defaults to 2
 
 - Run tests :
 
 ```shell
-go test ./...
+make test
 ```
 
-- Run tests and coverage :
+- Run tests and show coverage report :
 
 ```shell
-go test ./... -coverprofile=coverage.out
-
-go tool cover -html=coverage.out
+make test_report
 ```
