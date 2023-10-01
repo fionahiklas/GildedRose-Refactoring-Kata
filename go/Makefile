@@ -30,7 +30,7 @@ lint: ## Lint codebase
 	golangci-lint -E goimports run ./...
 
 format: ## Format codebase and check imports
-	goimports -w internal/ pkg/ cmd/
+	goimports -w ./*.go gildedrose
 
 delete_mock: ## Deletes all files that match `mock_*.go`
 	@echo "Deleting all mocks"
